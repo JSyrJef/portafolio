@@ -123,7 +123,7 @@ export function Aboutme() {
         <ContainerPrincipal>
           <AboutProfile>
             <AboutProfileIMG
-              src="/media/profile.jpg"
+              src="https://avatars.githubusercontent.com/u/90538822?v=4"
               alt="Jefferson Sanchez"
             />
           </AboutProfile>

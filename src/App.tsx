@@ -1,5 +1,4 @@
 import "./App.css";
-import { Fragment } from "react";
 import {
   Aboutme,
   ColorFondo,
@@ -10,10 +9,11 @@ import {
   Skills,
   Welcome,
 } from "./components";
+import React from "react";
 
 function App() {
   return (
-    <Fragment>
+    <React.Fragment>
       <ColorFondo>
         <Header />
         <Welcome />
@@ -23,7 +23,7 @@ function App() {
         <Contact/>
         <Footer />
       </ColorFondo>
-    </Fragment>
+    </React.Fragment>
   );
 }
 

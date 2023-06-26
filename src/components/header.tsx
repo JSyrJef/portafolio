@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Container } from "./container";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from "react";
+import {useTranslation} from "react-i18next";
 
 const Wrapper = styled.header`
   display: flex;
@@ -106,8 +107,26 @@ const ButtonHeader = styled.button`
     }
   }
 `;
+const ButtonLanguage = styled.button`
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #7eb677;
+  font-size: 1.1rem;
+  margin-top: 3px;
 
+  &:focus {
+    color: #ccc;
+  }
+  &:hover {
+    color: #ccc;
+  }
+`;
 export function Header() {
+  const [t, i18n] = useTranslation("global");
+
   const navRef = useRef<HTMLElement | null>(null);
 
   const showNavbar = () => {
@@ -124,15 +143,17 @@ export function Header() {
       <Container>
         <Bar>
           <Menu ref={navRef}>
-            <MenuItem href="#inicio" onClick={hideNavbar}>INICIO</MenuItem>
-            <MenuItem href="#curriculum" onClick={hideNavbar}>SOBRE Mí</MenuItem>
-            <MenuItem href="#skills" onClick={hideNavbar}>HABILIDADES</MenuItem>
-            <MenuItem href="#repositories" onClick={hideNavbar}>REPOSITORIOS</MenuItem>
-            <MenuItem href="#contact" onClick={hideNavbar}>CONTACTAME</MenuItem>
+            <MenuItem href="#inicio" onClick={hideNavbar}>{t("header.home")}</MenuItem>
+            <MenuItem href="#curriculum" onClick={hideNavbar}>{t("header.about_me")}</MenuItem>
+            <MenuItem href="#skills" onClick={hideNavbar}>{t("header.skills")}</MenuItem>
+            <MenuItem href="#repositories" onClick={hideNavbar}>{t("header.repositories")}</MenuItem>
+            <MenuItem href="#contact" onClick={hideNavbar}>{t("header.contact")}</MenuItem>
             <ButtonHeader className="nav-close-btn" onClick={showNavbar}>
               <FaTimes />
             </ButtonHeader>
           </Menu>
+          <ButtonLanguage onClick={() => i18n.changeLanguage("es")}>ES</ButtonLanguage>
+            <ButtonLanguage onClick={() => i18n.changeLanguage("en")}>EN</ButtonLanguage>
           <ButtonHeader onClick={showNavbar}>
             <FaBars />
           </ButtonHeader>

@@ -1,0 +1,56 @@
+{
+    "header":{
+        "home": "INICIO",
+        "about_me":"SOBRE Mí",
+        "skills": "HABILIDADES",
+        "repositories": "REPOSITORIOS",
+        "contact": "CONTACTO"
+    },
+
+    "welcome":{
+        "presentation": "Hola!, Soy Jefferson Sanchez.",
+        "im": "Soy",
+        "engineer": "Ingeniero en Ciencias de la Computación",
+        "principal": ", principalmente me gusta trabajar en el área de",
+        "web": "Desarrollo Web",
+        "so" :"tanto",
+        "frontend": "Frontend",
+        "how":"como",
+        "backend": "Backend",
+        "always": ", siempre trato cada día aprender algo nuevo y mejorar."
+    },
+
+    "aboutMe":{
+        "about_me": "SOBRE Mí",
+        "more_me": "Soy un ingeniero apasionado por las tecnologías, ya sean sitios web, aplicaciones móviles o cualquier otra cosa. Mi objetivo es crear siempre aplicaciones que sean escalables, seguras y confiables, ofreciendo una excelente experiencia de usuario.",
+        "cv": "DESCARGAR CV"
+    },
+
+    "able_to":{
+        "ableTo": "HABILIDADES",
+        "technical": "Habilidades técnicas",
+        "personal": "Habilidades personales",
+        "item1": "Pensamiento lógico",
+        "item2": "Creatividad",
+        "item3": "Comunicación",
+        "item4": "Gestión del tiempo",
+        "item5": "Inglés",
+        "item6": "Trabajo en equipo",
+        "item7": "Adaptabilidad"
+    },
+
+    "repositories":{
+        "repository": "REPOSITORIOS"
+    },
+
+    "contact": {
+        "contactus": "CONTACTO",
+        "availability": "Lun a Dom 10am a 10pm",
+        "message": "¡Envía tu consulta o idea en cualquier momento!"
+    },
+
+    "footer": {
+        "copy":"Derechos de autor ©",
+        "right": ". Todos los derechos reservados."
+    }
+}

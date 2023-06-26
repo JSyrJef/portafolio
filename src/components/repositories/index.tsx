@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Container } from "../container";
 import { Title } from "../title";
 import { Repository, RepositoryModel, mapDtoToModel } from "./repository";
+import {useTranslation} from "react-i18next";
 
 const Projects = styled.div`
   display: flex;
@@ -28,6 +29,7 @@ const Wrapper = styled.div`
 `;
 
 export function Repositories() {
+  const [t] = useTranslation("global");
   const [repos, setRepos] = useState<RepositoryModel[] | null>(null);
 
   async function getRepos() {
@@ -44,7 +46,7 @@ export function Repositories() {
   return (
     <Wrapper>
       <Container>
-        <Title id="repositories">Repositorios</Title>
+        <Title id="repositories">{t("repositories.repository")}</Title>
         <Projects>
           {repos?.map((repo, key) => (
             <Repository key={`repository-${key}`} repository={repo} />

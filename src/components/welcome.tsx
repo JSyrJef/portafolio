@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { useTranslation } from "react-i18next";
 const Wrapper = styled.div`
   box-sizing: border-box;
   display: flex;
@@ -40,7 +40,6 @@ const Bio = styled.h2`
   @media only screen and (max-width: 768px) {
     font-size: 1.75rem;
     margin-bottom: 24px;
-    
   }
   @media only screen and (max-width: 576px) {
     font-size: 1.5rem;
@@ -117,14 +116,17 @@ export const links: SocialModel[] = [
 
 const Bold = styled.b``;
 export function Welcome() {
+  const [t] = useTranslation("global");
   return (
     <Wrapper id="inicio">
-      <Presentation>Hola!, Soy Jefferson Sanchez.</Presentation>
+      <Presentation>{t("welcome.presentation")}</Presentation>
       <Bio>
-        Soy <Bold>Ingeniero en Ciencias de la Computación</Bold>, principalmente
-        me gusta trabajar en el área de <Bold>Desarrollo Web</Bold> tanto{" "}
-        <Bold>Frontend</Bold> como <Bold>Backend</Bold>, siempre trato cada día
-        aprender algo nuevo y mejorar.
+        {t("welcome.im")} <Bold>{t("welcome.engineer")}</Bold>
+        {t("welcome.principal")} <Bold>{t("welcome.web")}</Bold>{" "}
+        {t("welcome.so")}
+        <Bold> {t("welcome.frontend")}</Bold> {t("welcome.how")}{" "}
+        <Bold>{t("welcome.backend")}</Bold>
+        {t("welcome.always")}
       </Bio>
       <Social>
         {links.map((link, key) => (

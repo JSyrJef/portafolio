@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Container } from "./container";
 import { SocialLink, links } from "./welcome";
+import { useTranslation} from "react-i18next";
 
 const Wrapper = styled.footer`
   background: #1e1e1e;
@@ -26,12 +27,13 @@ const SocialIcon = styled.em`
   }
 `;
 export function Footer() {
+  const [t] = useTranslation("global");
   const year = new Date().getFullYear();
   return (
     <Wrapper>
       <Container>
         <Copyright>
-          Derechos de autor ©{year}. Todos los derechos reservados
+          {t("footer.copy")}{year}{t("footer.right")}
         </Copyright>
         <Copyright>
           {links.map((link, key) => (

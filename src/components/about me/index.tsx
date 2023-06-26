@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Container } from "../container";
 import { Title } from "../title";
+import {useTranslation} from "react-i18next";
 
 const Subtitle = styled.p`
   display: block;
@@ -117,6 +118,7 @@ const AboutCV = styled.a`
   }
 `;
 export function Aboutme() {
+  const [t] = useTranslation("global");
   return (
     <Container>
       <Seccion>
@@ -128,15 +130,11 @@ export function Aboutme() {
             />
           </AboutProfile>
           <AboutDetails>
-            <Title id="curriculum">SOBRE Mí</Title>
-            <Subtitle>
-              Soy un ingeniero apasionado por las tecnologías, ya sean sitios
-              web, aplicaciones móviles o cualquier otra cosa. Mi objetivo es
-              crear siempre aplicaciones que sean escalables, seguras y
-              confiables, ofreciendo una excelente experiencia de usuario.
+            <Title id="curriculum">{t("aboutMe.about_me")}</Title>
+            <Subtitle>{t("aboutMe.more_me")}
             </Subtitle>
             <AboutCV href="https://drive.google.com/file/d/1Wo2V-2OmJ8iaMRS5D3Xw4UTLaXzrRi1m/view?usp=sharing"  target="_blank">
-              DESCARGAR CV
+            {t("aboutMe.cv")}
             </AboutCV>
           </AboutDetails>
         </ContainerPrincipal>

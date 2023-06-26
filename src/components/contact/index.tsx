@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import { Container } from "../container";
 import { Title } from "../title";
+import {useTranslation} from "react-i18next"
 
 const Wrapper = styled.div`
   margin-bottom: 50px;
@@ -53,10 +54,11 @@ const ContactTitle = styled.div`
   margin: 0 0 8px;
 `;
 export function Contact() {
+  const [t] = useTranslation("global");
   return (
     <Wrapper>
       <Container>
-        <Title id="contact">Contacto</Title>
+        <Title id="contact">{t("contact.contactus")}</Title>
         <ContactContainer>
             <ContactLetter>
                 <ContactIcon>
@@ -64,7 +66,7 @@ export function Contact() {
                 </ContactIcon>
                 <ContactDetails>
                     <ContactTitle>+503 7879-4328</ContactTitle>
-                    <ContactTitle>Lun a Dom 10am a 10pm</ContactTitle>
+                    <ContactTitle>{t("contact.availability")}</ContactTitle>
                 </ContactDetails>
             </ContactLetter>
             <ContactLetter>
@@ -73,7 +75,7 @@ export function Contact() {
                 </ContactIcon>
                 <ContactDetails>
                     <ContactTitle>lsrjefferstrl@gmail.com</ContactTitle>
-                    <ContactTitle>¡Envía tu consulta o idea en cualquier momento!</ContactTitle>
+                    <ContactTitle>{t("contact.message")}</ContactTitle>
                 </ContactDetails>
             </ContactLetter>
         </ContactContainer>

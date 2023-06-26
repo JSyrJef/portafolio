@@ -1,0 +1,56 @@
+{
+  "header": {
+    "home": "HOME",
+    "about_me": "ABOUT ME",
+    "skills": "SKILLS",
+    "repositories": "REPOSITORIES",
+    "contact": "CONTACT"
+  },
+
+  "welcome": {
+    "presentation": "Hello! I'm Jefferson Sanchez.",
+    "im": "I'm a",
+    "engineer": "Computer Science Engineer",
+    "principal": ", I mainly enjoy working in the field of",
+    "web": "Web Development",
+    "so": "as well as",
+    "frontend": "Frontend",
+    "how": "and",
+    "backend": "Backend",
+    "always": ", I always strive to learn something new and improve every day."
+  },
+
+  "aboutMe": {
+    "about_me": "ABOUT ME",
+    "more_me": "I am an engineer passionate about technologies, whether it's websites, mobile applications, or anything else. My goal is to always create scalable, secure, and reliable applications, providing an excellent user experience.",
+    "cv": "DOWNLOAD CV"
+  },
+
+  "able_to": {
+    "ableTo": "SKILLS",
+    "technical": "Technical Skills",
+    "personal": "Personal Skills",
+    "item1": "Logical Thinking",
+    "item2": "Creativity",
+    "item3": "Communication",
+    "item4": "Time Management",
+    "item5": "English",
+    "item6": "Teamwork",
+    "item7": "Adaptability"
+  },
+
+  "repositories": {
+    "repository": "REPOSITORIES"
+  },
+
+  "contact": {
+    "contactus": "CONTACT",
+    "availability": "Mon to Sun 10am to 10pm",
+    "message": "Send your inquiry or idea anytime!"
+  },
+
+  "footer": {
+    "copy": "Copyright ©.",
+    "right": ". All rights reserved."
+  }
+}

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Container } from "../container";
 import { SubTitle, Title } from "../title";
+import {useTranslation} from "react-i18next";
 
 const Wrapper = styled.div`
   margin-bottom: 120px;
@@ -87,15 +88,16 @@ const SkillColor = styled.div`
   width: 0;
 `;
 export function Skills() {
+  const [t] = useTranslation("global");
   return (
     <Wrapper>
     <Container>
-      <Title id="skills">Habilidades</Title>
+      <Title id="skills">{t("able_to.ableTo")}</Title>
       <SkillsDiv>
         <SkillsTyP>
           <SubTitle>
             <SkillsIcon className="fas fa-layer-group" />
-            Habilidades técnicas
+            {t("able_to.technical")}
           </SubTitle>
           <SkillsTyPmin>
             <SkillBar>
@@ -208,7 +210,7 @@ export function Skills() {
         <SkillsTyP>
           <SubTitle>
             <SkillsIcon className="fas fa-user" />
-            Habilidades personales
+            {t("able_to.personal")}
           </SubTitle>
           <SkillsTyPmin>
             <SkillBar>
@@ -217,7 +219,7 @@ export function Skills() {
                   className="fas fa-check-square"
                   style={{ color: "#a0dd98" }}
                 />
-                Pensamiento lógico
+                {t("able_to.item1")}
               </SkillName>
               <SkillBarOuter>
                 <SkillItem style={{ left: "calc(80% - 1.5em)" }}>80%</SkillItem>
@@ -230,7 +232,7 @@ export function Skills() {
                   className="fas fa-check-square"
                   style={{ color: "#a0dd98" }}
                 />
-                Creatividad
+                {t("able_to.item2")}
               </SkillName>
               <SkillBarOuter>
                 <SkillItem style={{ left: "calc(70% - 1.5em)" }}>70%</SkillItem>
@@ -243,7 +245,7 @@ export function Skills() {
                   className="fas fa-check-square"
                   style={{ color: "#a0dd98" }}
                 />
-                Comunicación
+                {t("able_to.item3")}
               </SkillName>
               <SkillBarOuter>
                 <SkillItem style={{ left: "calc(80% - 1.5em)" }}>80%</SkillItem>
@@ -256,7 +258,7 @@ export function Skills() {
                   className="fas fa-check-square"
                   style={{ color: "#a0dd98" }}
                 />
-                Gestión del tiempo
+                {t("able_to.item4")}
               </SkillName>
               <SkillBarOuter>
                 <SkillItem style={{ left: "calc(70% - 1.5em)" }}>70%</SkillItem>
@@ -269,7 +271,7 @@ export function Skills() {
                   className="fas fa-check-square"
                   style={{ color: "#a0dd98" }}
                 />
-                Inglés
+                {t("able_to.item5")}
               </SkillName>
               <SkillBarOuter>
                 <SkillItem style={{ left: "calc(65% - 1.5em)" }}>65%</SkillItem>
@@ -282,7 +284,7 @@ export function Skills() {
                   className="fas fa-check-square"
                   style={{ color: "#a0dd98" }}
                 />
-                Trabajo en equipo
+                {t("able_to.item6")}
               </SkillName>
               <SkillBarOuter>
                 <SkillItem style={{ left: "calc(90% - 1.5em)" }}>90%</SkillItem>
@@ -295,7 +297,7 @@ export function Skills() {
                   className="fas fa-check-square"
                   style={{ color: "#a0dd98" }}
                 />
-                Adaptabilidad
+                {t("able_to.item7")}
               </SkillName>
               <SkillBarOuter>
                 <SkillItem style={{ left: "calc(80% - 1.5em)" }}>80%</SkillItem>

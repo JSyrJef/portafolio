@@ -133,7 +133,7 @@ export function Aboutme() {
             <Title id="curriculum">{t("aboutMe.about_me")}</Title>
             <Subtitle>{t("aboutMe.more_me")}
             </Subtitle>
-            <AboutCV href="https://drive.google.com/file/d/1Wo2V-2OmJ8iaMRS5D3Xw4UTLaXzrRi1m/view?usp=sharing"  target="_blank">
+            <AboutCV href="https://drive.google.com/file/d/1v2LC-3PP3Pt7K1YBqYa5B1XP16DtQoVD/view?usp=sharing"  target="_blank">
             {t("aboutMe.cv")}
             </AboutCV>
           </AboutDetails>
